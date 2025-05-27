@@ -3,6 +3,7 @@ import { ArrowRight, Download, Github, Linkedin, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Button from '../components/Button';
 import SriImage from './Sri.png';
+import Sripdf from './sriresume.pdf'
 
 const Home: React.FC = () => {
   return (
@@ -50,7 +51,7 @@ const Home: React.FC = () => {
             </div>
             
             <div className="flex flex-wrap gap-4">
-              <a href="/sriresume.pdf" download>
+              <a href={Sripdf} download>
                 <Button variant="primary">
                   <Download size={18} />
                   Download Resume
